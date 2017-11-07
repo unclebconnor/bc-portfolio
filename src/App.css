@@ -1,10 +1,33 @@
+/*colors
+dark gray: 343434
+less dark gray: 404040
+pale gray: dfe2d9
+dark blue: 266c8e
+light blue: 34a2d5
+pale blue: 88c0d9
+dark red: 763c3b
+light red: e7a6a2
+dark green: 728c31
+ligth green: 9fbb54
+cream: f7f5e9
+end colors*/
+
+/*font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Sumana', serif;*/
+
+html, body{
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
 body{
-	background-color: lightgray;
+	background-color: #404040;
 }
 
 nav {
+	margin:0;
+	padding: 0;
 	height: 50px;
-	background-color: lightgray;
+	background-color: #343434;
 	display:flex;
 	align-items: center;
 	justify-content: space-around;
@@ -15,21 +38,19 @@ nav {
 }
 
 .oddRow{
-	background-color: beige;
+	background-color: #f7f5e9;
 }
 
 .thickRow{
-	align-items: center;
-	display:flex;
-	justify-content: space-around;
-	margin: 10px 0 0 0;
+	vertical-align: center;
+	text-align: center;
+	padding: 10px 0 0 0;
 	min-height: 320px;
 }
 
 .thinRow{
-	align-items: center;
-	display:flex;
-	justify-content: space-around;
+	vertical-align: center;
+	text-align: center;
 	padding: 10px 0 0 0;
 	min-height: 170px;
 }
@@ -41,20 +62,48 @@ nav {
 	justify-content: center;
 }
 
+.borderBottom{
+	border-bottom: 1px solid #343434;
+}
+
+.inlineBlock{
+	display: inline-block;
+	margin: 0 auto;
+}
+
+.flexCenter{
+	display:flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.textArea {
+	margin: auto 0;
+	padding: 8px;
+	color: #f7f5e9;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+}
+
 .picOfMe{
-	border: 1px solid black;
 	width: 300px;
 	height:300px;
-	display:flex;
+	margin: 0 auto;
+	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
 .myBrand{
 	border: 1px solid black;
-	width: 300px;
-	height:300px;
-	display:flex;
+	width: 200px;
+	height:200px;
+	background-color: #763c3b;
+	border-radius: 5px;
+	color: #f7f5e9;
+	margin: 0 auto;
+	display: flex;
 	align-items: center;
 	justify-content: center;
 }
@@ -65,8 +114,55 @@ nav {
 	width: 150px;
 	height:150px;
 	margin: 0 auto;
-	display:flex;
+	color: #f7f5e9;
+	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
+.projectCard{
+	max-width: 300px;
+}
+
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1200px;
+}
+/* flip the pane when hovered */
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+	transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+	width: 240px;
+	height: 210px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform-origin: 45%;
+	transform: rotateY(180deg);
+}

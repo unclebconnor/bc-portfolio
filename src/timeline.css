@@ -161,12 +161,21 @@
 .vertical-timeline-element-content h2 {
 	color: #303e49
 }
-.vertical-timeline-element-content .vertical-timeline-element-date, .vertical-timeline-element-content p {
-	font-size: 13px;
-	font-size: .8125rem;
+.vertical-timeline-element-content .vertical-timeline-element-date{
+
+	font-size: 1.25em;
+	font-weight: 500;
+	color: #f7f5e9
+}
+
+.vertical-timeline-element-content p {
+
+	font-size: 1em;
 	font-weight: 500;
 	color: #333
 }
+
+
 .vertical-timeline-element-content .vertical-timeline-element-date {
 	display: inline-block
 }

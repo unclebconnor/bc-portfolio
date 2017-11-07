@@ -1,99 +1,92 @@
 import React, { Component } from 'react';
 import { VerticalTimeline, VerticalTimelineElement}  from 'react-vertical-timeline-component';
+import myPic from './img/myPic.png'
 import SchoolIcon from 'material-ui-icons/School';
 import WorkIcon from 'material-ui-icons/Work';
 import './timeline.css';
 import './App.css';
 
+
 class AboutMe extends Component {
   render() { 
     return (
       <div className="aboutMeWrapper">
-      	<div className="row oddRow thickRow">
-            <div>Some stuff 'bout me</div>
-        </div>
-		<VerticalTimeline>
+      	<div className="row thickRow flexCenter borderBottom">
+          <div className="col-md-8 col-xs-12 textArea">
+            <div className="inlineBlock">
+              <h3 >Branding Statement</h3>
+              <div >Observant, reliable, and unbound by convention. 
+              I am focused on helping others leverage technology to 
+              simplify and streamline complex tasks, making room for 
+              deep work and human connection. </div>
+              <h3 >List of Skills</h3>
+              <div >Skillz skilz etc </div>
+            </div>
+          </div>
+          <div className="col-md-4 col-xs-12 ">
+            <div className="picOfMe">
+              <img src={myPic} className="img-responsive" alt="We are the music-makers"/>
+            </div>
+          </div>
+      	</div>
+		<VerticalTimeline> 
 		  <VerticalTimelineElement
-		    className="vertical-timeline-element--work"
-		    date="ya"
-		    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-		    icon={<WorkIcon />}
+		    className="vertical-timeline-element--education"
+		    date="Aug-Nov 2017"
+		    iconStyle={{ background: '#266c8e', color: '#fff' }}
+		    icon={<SchoolIcon />}
 		  >
-		    <h3 className="vertical-timeline-element-title">Title</h3>
-		    <h4 className="vertical-timeline-element-subtitle">Location</h4>
-		    <p>blah blah</p>
+		    <h3 className="vertical-timeline-element-title">WDI General Assembly</h3>
+		    <h4 className="vertical-timeline-element-subtitle">Seattle</h4>
+		    <p>12 week immersive web-developer bootcamp</p>
+		    <p>Full-Stack - JS, Node, SQL, Ruby/Rails</p>
 		  </VerticalTimelineElement>
 		  <VerticalTimelineElement
 		    className="vertical-timeline-element--work"
-		    date="2010 - 2011"
-		    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+		    date="2007-2017"
+		    iconStyle={{ background: '#763c3b', color: '#fff' }}
 		    icon={<WorkIcon />}
 		  >
-		    <h3 className="vertical-timeline-element-title">Art Director</h3>
-		    <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
-		    <p>
-		      Creative Direction, User Experience, Visual Design, SEO, Online Marketing
-		    </p>
-		  </VerticalTimelineElement>
-		  <VerticalTimelineElement
-		    className="vertical-timeline-element--work"
-		    date="2008 - 2010"
-		    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-		    icon={<WorkIcon />}
-		  >
-		    <h3 className="vertical-timeline-element-title">Web Designer</h3>
-		    <h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4>
-		    <p>
-		      User Experience, Visual Design
-		    </p>
-		  </VerticalTimelineElement>
-		  <VerticalTimelineElement
-		    className="vertical-timeline-element--work"
-		    date="2006 - 2008"
-		    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-		    icon={<WorkIcon />}
-		  >
-		    <h3 className="vertical-timeline-element-title">Web Designer</h3>
-		    <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
-		    <p>
-		      User Experience, Visual Design
-		    </p>
+		    <h3 className="vertical-timeline-element-title">Lead Teacher, Tech Specialist</h3>
+		    <h4 className="vertical-timeline-element-subtitle">Boston Day & Evening Academy</h4>
+		    <p>Lead Teacher - Teacher supervision, operations, coaching</p>
+		    <p>Technology Specialist - Student Information System on Salesforce platform</p>
+		    <p>Instructor - High School Mathematics teacher & Competency-Based Education coaching</p>
 		  </VerticalTimelineElement>
 		  <VerticalTimelineElement
 		    className="vertical-timeline-element--education"
-		    date="April 2013"
-		    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+		    date="2016-2017"
+		    iconStyle={{ background: '#266c8e', color: '#fff' }}
 		    icon={<SchoolIcon />}
 		  >
-		    <h3 className="vertical-timeline-element-title">Content Marketing for Web, Mobile and Social Media</h3>
-		    <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
-		    <p>
-		      Strategy, Social Media
-		    </p>
+		    <h3 className="vertical-timeline-element-title">Mathematics Coursework</h3>
+		    <h4 className="vertical-timeline-element-subtitle">Harvard Extension School</h4>
+		    <p>Linear Algebra</p>
+		    <p>Statistics</p>
+		  </VerticalTimelineElement>
+		  <VerticalTimelineElement
+		    className="vertical-timeline-element--work"
+		    date="2011-2013"
+		    iconStyle={{ background: '#763c3b', color: '#fff' }}
+		    icon={<WorkIcon />}
+		  >
+		    <h3 className="vertical-timeline-element-title">Technical Director & Lesson Designer</h3>
+		    <h4 className="vertical-timeline-element-subtitle">21st Century Lessons</h4>
+		    <p>Created open-source mathematics content</p>
+		    <p>Provided technical support to lesson designers</p>
+		    <p>Managed download data</p>
 		  </VerticalTimelineElement>
 		  <VerticalTimelineElement
 		    className="vertical-timeline-element--education"
-		    date="November 2012"
-		    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+		    date="2009-2015"
+		    iconStyle={{ background: '#266c8e', color: '#fff' }}
 		    icon={<SchoolIcon />}
 		  >
-		    <h3 className="vertical-timeline-element-title">Agile Development Scrum Master</h3>
-		    <h4 className="vertical-timeline-element-subtitle">Certification</h4>
-		    <p>
-		      Creative Direction, User Experience, Visual Design
-		    </p>
-		  </VerticalTimelineElement>
-		  <VerticalTimelineElement
-		    className="vertical-timeline-element--education"
-		    date="2002 - 2006"
-		    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-		    icon={<SchoolIcon />}
-		  >
-		    <h3 className="vertical-timeline-element-title">Bachelor of Science in Interactive Digital Media Visual Imaging</h3>
-		    <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4>
-		    <p>
-		      Creative Direction, Visual Design
-		    </p>
+		    <h3 className="vertical-timeline-element-title">Intro to CS Coursework</h3>
+		    <h4 className="vertical-timeline-element-subtitle">Bunker Hill Community College</h4>
+		    <p>C++</p>
+		    <p>Database Design (MS Access/MySQL)</p>
+		    <p>Java</p>
 		  </VerticalTimelineElement>
 		</VerticalTimeline>
       </div>
