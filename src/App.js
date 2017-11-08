@@ -20,16 +20,23 @@ class App extends Component {
       		<div>
             <div className="container-fluid">
               <nav className="row">
-              <FreeBreakfast color={'white'}/>
-                <div className="col-xs-2 links"><Link to={"/home"}>Home</Link></div>
-                <div className="col-xs-2 links"><Link to={"/AboutMe"}>About Me</Link></div>
-                <div className="col-xs-2 links"><Link to={"/Projects"}>Projects</Link></div>
-                <div className="col-xs-2 links"><Link to={"/Contact"}>Contact</Link></div>
-                <div className="col-xs-2 links"><a href={Resume} target="_blank">Resume</a></div>
+                <div className="col-sm-1 logoIcon">
+                  <FreeBreakfast color={'white'}/>
+                </div>
+                <div className="col-sm-2 col-xs-12">
+                  <div className="col-sm-2 col-xs-12  navLinks "><a href={Resume} target="_blank">Resume</a></div>
+                </div>
+                <div className="col-sm-3"></div>
+                <div className="col-sm-6">
+                  <div className="col-sm-3 col-xs-12 navLinks"><Link to={"/home"}>Home</Link></div>
+                  <div className="col-sm-3 col-xs-12 navLinks"><Link to={"/AboutMe"}>About</Link></div>
+                  <div className="col-sm-3 col-xs-12 navLinks"><Link to={"/Projects"}>Projects</Link></div>
+                  <div className="col-sm-3 col-xs-12 navLinks"><Link to={"/Contact"}>Contact</Link></div>
+                </div>
               </nav>
             </div>
 
-            <div className="mainWrapper container">
+            <div className="mainWrapper container-fluid">
       		    <Route path={"/home"} component={Home}/>
               <Route path={"/AboutMe"} component={AboutMe}/>
               <Route path={"/Projects"} component={Projects}/>

@@ -7,7 +7,7 @@ class Home extends Component {
     return (
     	<div className="homeWrapper container">
       	<div className="row thickRow flexCenter">
-          <div className="col-md-8 col-xs-12 textArea">
+          <div className="col-md-8 col-xs-12 textArea flexCenter">
             <div className="inlineBlock">
               <h2 >Brian Connor</h2>
               <h3 >Builder of Full-Stack Web-things</h3>
@@ -22,11 +22,11 @@ class Home extends Component {
         <div className="row thickRow ">
           <div className="flip-container col-md-4 col-xs-12">
             <div className="flipper">
-              <div className="front myBrand textArea">
+              <div className="front myBrand textArea flexCenter">
                 {/*<!-- building icon -->*/}
                 <h4>Builder of Things</h4>
               </div>
-              <div className="back myBrand textArea">
+              <div className="back myBrand textArea flexCenter">
                 <p>My work is sturdy and clean.</p>
                 <p>Regularly learning new tools & techniques keeps me engaged in my craft</p>
               </div>
@@ -34,11 +34,11 @@ class Home extends Component {
           </div>
           <div className="flip-container col-md-4 col-xs-12">
             <div className="flipper">
-              <div className="front myBrand textArea">
+              <div className="front myBrand textArea flexCenter">
                 {/*<!-- building icon -->*/}
                 <h4>Problem Solver</h4>
               </div>
-              <div className="back myBrand textArea">
+              <div className="back myBrand textArea flexCenter">
                 <p>I'm interested in human behavior and pay attention to the nuances of how people work</p>
                 <p>I help people simplify & streamline to make room for critical thinking and authentic interaction</p>
               </div>
@@ -46,11 +46,11 @@ class Home extends Component {
           </div>
           <div className="flip-container col-md-4 col-xs-12">
             <div className="flipper">
-              <div className="front myBrand textArea">
+              <div className="front myBrand textArea flexCenter">
                 {/*<!-- building icon -->*/}
                 <h4>Human</h4>
               </div>
-              <div className="back myBrand textArea">
+              <div className="back myBrand textArea flexCenter">
                 <div>  
                   <p>I bike commute for exercise, to save the planet, and so I can park right at the door</p>
                   <p>I never turn down a hike that involves a waterfall</p>
@@ -61,11 +61,11 @@ class Home extends Component {
           </div>
           <div className="flip-container col-md-4 col-xs-12">
             <div className="flipper">
-              <div className="front myBrand textArea">
+              <div className="front myBrand textArea flexCenter">
                 {/*<!-- building icon -->*/}
                 <h4>You</h4>
               </div>
-              <div className="back myBrand textArea">
+              <div className="back myBrand textArea flexCenter">
                 <div>  
                   <p>You're not just in it for the money</p>
                   <p>You value a positive community and do your best to foster one</p>

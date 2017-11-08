@@ -84,9 +84,8 @@ class AboutMe extends Component {
 		  >
 		    <h3 className="vertical-timeline-element-title">Intro to CS Coursework</h3>
 		    <h4 className="vertical-timeline-element-subtitle">Bunker Hill Community College</h4>
-		    <p>C++</p>
+		    <p>C++/Java</p>
 		    <p>Database Design (MS Access/MySQL)</p>
-		    <p>Java</p>
 		  </VerticalTimelineElement>
 		</VerticalTimeline>
       </div>

@@ -17,6 +17,8 @@ font-family: 'Sumana', serif;*/
 
 html, body{
 	font-family: 'Source Sans Pro', sans-serif;
+	margin: 0;
+	padding: 0;
 }
 
 body{
@@ -26,41 +28,76 @@ body{
 nav {
 	margin:0;
 	padding: 0;
-	height: 50px;
+	min-height: 50px;
 	background-color: #343434;
-	display:flex;
-	align-items: center;
-	justify-content: space-around;
+}
+
+.iconLink{
+	width:30px;
+}
+
+
+.navLinks{
+	margin: 15px 0;
+}
+
+.logoIcon{
+	margin: 12px 0;
+}
+
+.container-fluid{
+	text-align: center;
+}
+
+
+
+.padMe{
+	padding: 5px 10px;
 }
 
 .appWrapper{
 	min-width: 320px;
 }
 
-.oddRow{
-	background-color: #f7f5e9;
+.projTable{
+	max-width: 300px;
+	color: #f7f5e9;
+	margin: auto;
 }
+
+.iconSpacer{
+	height: 50px;
+}
+
+.lft{
+	text-align: left;
+}
+
+.ctr{
+	text-align: center;
+}
+
 
 .thickRow{
-	vertical-align: center;
+	width: 100%;
+	vertical-align: middle;
 	text-align: center;
 	padding: 10px 0 0 0;
-	min-height: 320px;
 }
 
+
 .thinRow{
+	width: 100%;
 	vertical-align: center;
 	text-align: center;
 	padding: 10px 0 0 0;
 	min-height: 170px;
 }
 
-
-.links{
-	display:flex;
-	align-items: center;
-	justify-content: center;
+.projectImg{
+	width: 230px;
 }
+
 
 .borderBottom{
 	border-bottom: 1px solid #343434;
@@ -74,25 +111,23 @@ nav {
 .flexCenter{
 	display:flex;
 	align-items: center;
+	text-align: center;
 	justify-content: center;
 }
 
 .textArea {
+	height: 300px;
+	vertical-align: middle;
 	margin: auto 0;
 	padding: 8px;
 	color: #f7f5e9;
-	display:flex;
-	align-items: center;
-	justify-content: center;
+	/*flex: 0 1 300px;*/
 }
 
 .picOfMe{
 	width: 300px;
 	height:300px;
 	margin: 0 auto;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 }
 
 .myBrand{
@@ -103,9 +138,6 @@ nav {
 	border-radius: 5px;
 	color: #f7f5e9;
 	margin: 0 auto;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 }
 
 .goodyBoxes{
@@ -115,9 +147,6 @@ nav {
 	height:150px;
 	margin: 0 auto;
 	color: #f7f5e9;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 }
 
 .projectCard{
@@ -163,6 +192,6 @@ nav {
 
 /* back, initially hidden pane */
 .back {
-	transform-origin: 45%;
+	transform-origin: 105px 105px;
 	transform: rotateY(180deg);
 }
