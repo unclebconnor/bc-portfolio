@@ -9,8 +9,9 @@ import './App.css';
 import {
   BrowserRouter as Router,
   Route,
-  Link
-} from 'react-router-dom'
+  Link,
+  Redirect
+} from 'react-router-dom';
 
 
 class App extends Component {
@@ -41,6 +42,7 @@ class App extends Component {
               <Route path={"/AboutMe"} component={AboutMe}/>
               <Route path={"/Projects"} component={Projects}/>
               <Route path={"/Contact"} component={Contact}/>
+              <Redirect from="/" to="/home" />
             </div>
       		</div> 
       	</Router>
