@@ -4,7 +4,8 @@ import './App.css';
 class Contact extends Component {
   render() {
     return (
-      	<div className="contactWrapper container-fluid">
+      	<div className="contactWrapper container">
+      		<div className="iNeedSomeSpace"></div>
 			<iframe 
 				src="https://docs.google.com/forms/d/e/1FAIpQLSeH1UmEdrfokmUz_A6hEL4TWx5lgEV-T8tfUGor4qgQta5Yeg/viewform?embedded=true" 
 				width="100%" 
@@ -14,7 +15,9 @@ class Contact extends Component {
 				marginWidth="0"
 				title="contactIframe"
 				color="white"
+				className="boxShadow"
 			>Loading...</iframe>
+			<div className="iNeedSomeSpace"></div>
       	</div>
     );
   }

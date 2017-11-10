@@ -11,23 +11,24 @@ class AboutMe extends Component {
   render() { 
     return (
       <div className="aboutMeWrapper">
-      	<div className="row thickRow flexCenter borderBottom">
-          <div className="col-md-8 col-xs-12 textArea">
-            <div className="inlineBlock">
-              <h3 >Branding Statement</h3>
-              <div >Observant, reliable, and unbound by convention. 
-              I am focused on helping others leverage technology to 
-              simplify and streamline complex tasks, making room for 
-              deep work and human connection. </div>
-              <h3 >List of Skills</h3>
-              <div >Skillz skilz etc </div>
-            </div>
-          </div>
-          <div className="col-md-4 col-xs-12 ">
-            <div className="picOfMe">
-              <img src={myPic} className="img-responsive" alt="We are the music-makers"/>
-            </div>
-          </div>
+      	<div className="iNeedSomeSpace"></div>
+      	<div className="borderBottom">
+      		<div className="row thickRow">
+          		<div className="col-sm-7 col-xs-12 textArea flexCenter">
+          		  <div className="inlineBlock">
+          		    <h3>I am...</h3>
+          		    <h4 className="padMe">observant, reliable, and unbound by convention</h4>
+          		    <h4 className="padMe">focused on helping others leverage technology to 
+          		    simplify and streamline complex tasks, making room for 
+          		    deep work and human connection </h4>
+          		  </div>
+          		</div>
+          		<div className="col-sm-5 col-xs-12 ">
+          		  <div className="picOfMe">
+          		    <img src={myPic} className="img-responsive circle" alt="We are the music-makers"/>
+          		  </div>
+          		</div>
+          	</div>
       	</div>
 		<VerticalTimeline> 
 		  <VerticalTimelineElement

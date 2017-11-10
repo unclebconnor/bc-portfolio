@@ -8,8 +8,9 @@ pale blue: 88c0d9
 dark red: 763c3b
 light red: e7a6a2
 dark green: 728c31
-ligth green: 9fbb54
+light green: 9fbb54
 cream: f7f5e9
+orange: d4833f;
 end colors*/
 
 /*font-family: 'Source Sans Pro', sans-serif;
@@ -45,11 +46,16 @@ nav {
 	margin: 12px 0;
 }
 
-.container-fluid{
-	text-align: center;
+.container{
+	max-width: 759px;
 }
 
-
+.iNeedSomeSpace{
+	height: 30px;
+}
+.iNeedLessSpace{
+	height: 15px;
+}
 
 .padMe{
 	padding: 5px 10px;
@@ -77,6 +83,18 @@ nav {
 	text-align: center;
 }
 
+.bkgRed{
+	background-color: #763c3b;
+}
+
+.bkgBlue{
+	background-color: #266c8e;
+}
+
+.bkgGreen{
+	background-color: #728c31;
+}
+
 
 .thickRow{
 	width: 100%;
@@ -98,9 +116,18 @@ nav {
 	width: 230px;
 }
 
+.circle{
+	border-radius: 50%;
+}
+
+.boxShadow{
+	box-shadow: 0 3px 5px 5px #343434;
+}
+
 
 .borderBottom{
 	border-bottom: 1px solid #343434;
+	padding-bottom: 30px;
 }
 
 .inlineBlock{
@@ -108,10 +135,21 @@ nav {
 	margin: 0 auto;
 }
 
+.block{
+	display: block;
+}
+
 .flexCenter{
 	display:flex;
 	align-items: center;
 	text-align: center;
+	justify-content: center;
+}
+
+.flexLeftCenter{
+	display:flex;
+	align-items: center;
+	text-align: left;
 	justify-content: center;
 }
 
@@ -134,19 +172,17 @@ nav {
 	border: 1px solid black;
 	width: 200px;
 	height:200px;
-	background-color: #763c3b;
+	background-color: rgba(52, 52, 52,0.9);
 	border-radius: 5px;
 	color: #f7f5e9;
 	margin: 0 auto;
 }
 
 .goodyBoxes{
-	border: 1px solid black;
+	display: inline-block;
+	width: 50px;
+	margin: 10px 20px;
 	border-radius: 5px;
-	width: 150px;
-	height:150px;
-	margin: 0 auto;
-	color: #f7f5e9;
 }
 
 .projectCard{
@@ -155,6 +191,7 @@ nav {
 
 /* entire container, keeps perspective */
 .flip-container {
+	display: inline-block;
 	perspective: 1200px;
 }
 /* flip the pane when hovered */
@@ -163,8 +200,9 @@ nav {
 }
 
 .flip-container, .front, .back {
-	width: 240px;
-	height: 210px;
+	width: 210px;
+	height: 240px;
+	margin: 10px 0;
 }
 
 /* flip speed goes here */

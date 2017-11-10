@@ -10,6 +10,7 @@ class Projects extends Component {
   render() {
     return (
       <div className="projectsWrapper container-fluid">
+        <div className="iNeedSomeSpace"></div>
       	<div className="row thickRow borderBottom">
           <div className="col-sm-5 col-xs-12 ">
             <img 
@@ -19,6 +20,7 @@ class Projects extends Component {
             />
           </div>
           <div className='col-sm-5 col-xs-12 inlineBlock'>
+          <div className="iNeedLessSpace"></div>
             <table className="projTable ">
               <thead>
                 <tr>
@@ -41,31 +43,40 @@ class Projects extends Component {
                     </ul>
                   </td>
                 </tr>
-
               </tbody>
             </table>
           </div>
           <div className='col-sm-2 col-xs-12'>
             <div className="iconSpacer"></div>
-            <div className="iconSpacer">
+            <a 
+              className="iconSpacer block" 
+              href="https://github.com/unclebconnor/set" 
+              target="_blank"
+            >
               <img 
                 src={GitHub} 
                 alt='GitHub' 
                 className='iconLink'
               />
-              <a className="padMe" href="#">Github</a>
-            </div>
-            <div className="iconSpacer">
+              <p className="padMe block" href="#">Github</p>
+            </a>
+            <div className="iNeedSomeSpace"></div>
+            <a 
+              className="iconSpacer block"
+              href="https://unclebconnor.github.io/set/"
+              target="_blank"
+            >
               <img 
                 src={Web} 
                 alt='Demo' 
                 className='iconLink'
               />
-              <a className="padMe" href="#">Demo</a>
-            </div>
+              <p className="padMe block" href="#">Demo</p>
+            </a>
             <div className="iconSpacer"></div>
           </div>
         </div>
+        <div className="iNeedSomeSpace"></div>
         <div className="row thickRow borderBottom">
           <div className="col-sm-5 col-xs-12 ">
             <img 
@@ -75,6 +86,7 @@ class Projects extends Component {
             />
           </div>
           <div className='col-sm-5 col-xs-12 inlineBlock'>
+            <div className="iNeedLessSpace"></div>
             <table className="projTable ">
               <thead>
                 <tr>
@@ -102,25 +114,35 @@ class Projects extends Component {
           </div>
           <div className='col-sm-2 col-xs-12'>
             <div className="iconSpacer"></div>
-            <div className="iconSpacer">
+            <a 
+              className="iconSpacer block" 
+              href="https://github.com/unclebconnor/unit2Proj-tapas" 
+              target="_blank"
+            >
               <img 
                 src={GitHub} 
                 alt='GitHub' 
                 className='iconLink'
               />
-              <a className="padMe" href="#">Github</a>
-            </div>
-            <div className="iconSpacer">
+              <p className="padMe" href="#">Github</p>
+            </a>
+            <div className="iNeedSomeSpace"></div>
+            <a 
+              className="iconSpacer block" 
+              href="https://tapaspracticejournal.herokuapp.com/"
+              target="_blank"
+            >
               <img 
                 src={Web} 
                 alt='Demo' 
                 className='iconLink'
               />
-              <a className="padMe" href="#">Demo</a>
-            </div>
-            <div className="iconSpacer"></div>
+              <p className="padMe block">Demo</p>
+            </a>
+            <div className="iconSpacer block"></div>
           </div>
         </div>
+        <div className="iNeedSomeSpace"></div>
         <div className="row thickRow borderBottom">
           <div className="col-sm-5 col-xs-12 ">
             <img 
@@ -130,6 +152,7 @@ class Projects extends Component {
             />
           </div>
           <div className='col-sm-5 col-xs-12 inlineBlock'>
+            <div className="iNeedLessSpace"></div>
             <table className="projTable ">
               <thead>
                 <tr>
@@ -157,22 +180,31 @@ class Projects extends Component {
           </div>
           <div className='col-sm-2 col-xs-12'>
             <div className="iconSpacer"></div>
-            <div className="iconSpacer">
+            <a className="iconSpacer block" href="https://github.com/unclebconnor/rainyday" target="_blank">
               <img 
                 src={GitHub} 
                 alt='GitHub' 
                 className='iconLink'
               />
-              <a className="padMe" href="#">Github</a>
-            </div>
-            <div className="iconSpacer">
+              <p className="padMe block">Github</p>
+            </a>
+            <div className="iNeedSomeSpace"></div>
+            <a className="iconSpacer block" href="https://evening-sea-90772.herokuapp.com/" target="_blank">
               <img 
                 src={Web} 
                 alt='Demo' 
                 className='iconLink'
               />
-              <a className="padMe" href="#">Demo</a>
-            </div>
+              <p className="padMe block">Demo</p>
+            </a>
+            <div className="iNeedLessSpace"></div>
+            <a 
+              href="" 
+              data-toggle="tooltip" 
+              title="username:  suzie@sample.com, password: docrivers"
+            >
+              <span className="glyphicon glyphicon-info-sign"></span>
+            </a>
             <div className="iconSpacer"></div>
           </div>
         </div>

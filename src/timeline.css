@@ -211,11 +211,11 @@
 	}
 	.vertical-timeline-element-content p {
 		font-size: 16px;
-		font-size: 1rem
+		font-size: 1.2rem
 	}
 	.vertical-timeline-element-content .vertical-timeline-element-date {
 		font-size: 14px;
-		font-size: .875rem
+		font-size: 1.25rem
 	}
 }
 @media only screen and (min-width:720px) {
@@ -233,10 +233,10 @@
 	.vertical-timeline-element-content .vertical-timeline-element-date {
 		position: absolute;
 		width: 100%;
-		left: 105%;
+		left: 145%;
 		top: 16px;
 		font-size: 16px;
-		font-size: 1rem;
+		font-size: 1.3rem;
 		color: #f7f5e9;
 	}
 	.vertical-timeline-element.vertical-timeline-element--right .vertical-timeline-element-content, .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) .vertical-timeline-element-content {
