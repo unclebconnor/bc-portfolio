@@ -4,12 +4,78 @@ import TapasImg from './img/Tapas.png'
 import RainyDayImg from './img/RainyDay.png' 
 import GitHub from './img/github.png' 
 import Web from './img/web.png'
+import BodyMap from './img/bodymap.png'
 import './App.css';
 
 class Projects extends Component {
   render() {
     return (
       <div className="projectsWrapper container-fluid">
+        <div className="iNeedSomeSpace"></div>
+        <div className="row thickRow borderBottom">
+          <div className="col-sm-5 col-xs-12 ">
+            <img 
+              src={BodyMap} 
+              alt='Body Map' 
+              className='projectImg'
+            />
+          </div>
+          <div className='col-sm-5 col-xs-12 inlineBlock'>
+          <div className="iNeedLessSpace"></div>
+            <table className="projTable ">
+              <thead>
+                <tr>
+                  <th colSpan="2" className="ctr"><h3>Body Map</h3></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td colSpan="2" className="ctr">Biology Teaching Tool</td>
+                </tr>
+                <tr >
+                  <td colSpan="2" className="ctr"><h4>Focus</h4></td>
+                </tr>
+                <tr>
+                  <td colSpan="2" className="lft">
+                    <ul>
+                      <li>API Interaction</li>
+                      <li>Responsive Design</li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div className='col-sm-2 col-xs-12'>
+            <div className="iconSpacer"></div>
+            <a 
+              className="iconSpacer block" 
+              href="https://github.com/unclebconnor/body_map" 
+              target="_blank"
+            >
+              <img 
+                src={GitHub} 
+                alt='GitHub' 
+                className='iconLink'
+              />
+              <p className="padMe block" href="#">Github</p>
+            </a>
+            <div className="iNeedSomeSpace"></div>
+            <a 
+              className="iconSpacer block"
+              href="http://bodymap.herokuapp.com/maps/1"
+              target="_blank"
+            >
+              <img 
+                src={Web} 
+                alt='Demo' 
+                className='iconLink'
+              />
+              <p className="padMe block" href="">Demo</p>
+            </a>
+            <div className="iconSpacer"></div>
+          </div>
+        </div>
         <div className="iNeedSomeSpace"></div>
       	<div className="row thickRow borderBottom">
           <div className="col-sm-5 col-xs-12 ">
@@ -71,7 +137,7 @@ class Projects extends Component {
                 alt='Demo' 
                 className='iconLink'
               />
-              <p className="padMe block" href="#">Demo</p>
+              <p className="padMe block" href="">Demo</p>
             </a>
             <div className="iconSpacer"></div>
           </div>
