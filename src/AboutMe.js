@@ -51,7 +51,7 @@ class AboutMe extends Component {
 		    <h3 className="vertical-timeline-element-title">Lead Teacher, Tech Specialist</h3>
 		    <h4 className="vertical-timeline-element-subtitle">Boston Day & Evening Academy</h4>
 		    <p>Lead Teacher - Teacher supervision, operations, coaching</p>
-		    <p>Technology Specialist - Student Information System on Salesforce platform</p>
+		    <p>Technology Specialist - Designed a student Information Database on Salesforce</p>
 		    <p>Instructor - High School Mathematics teacher & Competency-Based Education coaching</p>
 		  </VerticalTimelineElement>
 		  <VerticalTimelineElement
