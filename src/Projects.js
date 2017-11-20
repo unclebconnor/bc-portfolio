@@ -236,7 +236,7 @@ class Projects extends Component {
                   <td colSpan="2" className="lft">
                     <ul>
                       <li>Data Visualization</li>
-                      <li>React Specific Interations</li>
+                      <li>React Specific Interactions</li>
                       <li>Project Management</li>
                     </ul>
                   </td>
