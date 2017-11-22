@@ -236,8 +236,8 @@ class Projects extends Component {
                   <td colSpan="2" className="lft">
                     <ul>
                       <li>Data Visualization</li>
-                      <li>React Specific Interactions</li>
-                      <li>Project Management</li>
+                      <li>username: suzie@sample.com</li>
+                      <li>password: password</li>
                     </ul>
                   </td>
                 </tr>
@@ -255,7 +255,7 @@ class Projects extends Component {
               <p className="padMe block">Github</p>
             </a>
             <div className="iNeedSomeSpace"></div>
-            <a className="iconSpacer block" href="https://evening-sea-90772.herokuapp.com/" target="_blank">
+            <a className="iconSpacer block" href="https://rainydaysavings.herokuapp.com/" target="_blank">
               <img 
                 src={Web} 
                 alt='Demo' 
