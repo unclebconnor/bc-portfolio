@@ -264,14 +264,6 @@ class Projects extends Component {
               <p className="padMe block">Demo</p>
             </a>
             <div className="iNeedLessSpace"></div>
-            <a 
-              href="" 
-              data-toggle="tooltip" 
-              title="username:  suzie@sample.com, password: docrivers"
-            >
-              <span className="glyphicon glyphicon-info-sign"></span>
-            </a>
-            <div className="iconSpacer"></div>
           </div>
         </div>
       </div>
