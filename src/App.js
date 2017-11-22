@@ -32,7 +32,7 @@ class App extends Component {
                     ><span className="glyphicon glyphicon-menu-hamburger"></span>
                     </a>
                     <ul class="dropdown-menu">
-                      <li><Link to={"/home"}>Home</Link></li>
+                      <li><Link to={"/"}>Home</Link></li>
                       <li><Link to={"/AboutMe"}>About</Link></li>
                       <li><Link to={"/Projects"}>Projects</Link></li>
                       <li><Link to={"/Contact"}>Contact</Link></li>
@@ -46,7 +46,7 @@ class App extends Component {
                 </div>
                 <div className="col-sm-5"></div>
                 <div className="col-sm-5 hidden-xs">
-                  <div className="col-sm-3 navLinks"><Link to={"/home"}>Home</Link></div>
+                  <div className="col-sm-3 navLinks"><Link to={"/"}>Home</Link></div>
                   <div className="col-sm-3 navLinks"><Link to={"/AboutMe"}>About</Link></div>
                   <div className="col-sm-3 navLinks"><Link to={"/Projects"}>Projects</Link></div>
                   <div className="col-sm-3 navLinks"><Link to={"/Contact"}>Contact</Link></div>
@@ -55,11 +55,11 @@ class App extends Component {
             </div>
 
             <div className="mainWrapper container">
-      		    <Route path={"/home"} component={Home}/>
+      		    <Route exact path={"/"} component={Home}/>
               <Route path={"/AboutMe"} component={AboutMe}/>
               <Route path={"/Projects"} component={Projects}/>
               <Route path={"/Contact"} component={Contact}/>
-              <Redirect from="/" to="/home" />
+              
             </div>
       		</div> 
       	</Router>
