@@ -40,7 +40,7 @@ class Home extends Component {
                   </a>
                   <a 
                     className="goodyBoxes bkgRed"
-                    href="#"
+                    href="https://generalassemb.ly/"
                     target="_blank"
                   >
                     <img src={GA} className="img-responsive" alt="Link to My General Assembly Profile"/>
